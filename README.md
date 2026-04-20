@@ -17,3 +17,8 @@
 ### Charts
 ![Dashboard Page 1](churn_dashboard_page1.png)
 ![Dashboard Page 2](churn_dashboard_page2.png)
+![Charts](churn_by_contract.png)
+![Charts](churn_by_internet.png)
+![Charts](churn_by_payment.png)
+![Charts](churn_by_tenure.png)
+
