@@ -15,5 +15,5 @@
 - Python (Pandas, Matplotlib)
 - VS Code
 ### Charts
-![Dashboard Page 1](charts/churn_dashboard_page1.png)
-![Dashboard Page 2](charts/churn_dashboard_page2.png)
+![Dashboard Page 1](churn_dashboard_page1.png)
+![Dashboard Page 2](churn_dashboard_page2.png)
