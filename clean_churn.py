@@ -1,6 +1,5 @@
 import pandas as pd
  
-# Loading the data
 df = pd.read_csv('WA_Fn-UseC_-Telco-Customer-Churn.csv')
 print("Original shape:", df.shape)
  
@@ -20,7 +19,6 @@ df['TenureGroup'] = pd.cut(df['tenure'],
                             labels=['0-12 months', '13-24 months',
                                     '25-48 months', '49-72 months'])
  
-# Save clean file
 df.to_csv('telco_churn_clean.csv', index=False)
 print("\nDone! Clean file saved.")
 print(f"Overall churn rate: {df['ChurnBinary'].mean() * 100:.2f}%")
