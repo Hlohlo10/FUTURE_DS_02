@@ -1,5 +1,5 @@
 # Customer Retention & Churn Analysis
-## Future Interns — Data Science Task 2
+## Future Interns -Data Science Task 2
 
 ### Key Numbers
 - Total Customers: 7,032
