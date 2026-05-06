@@ -7,13 +7,13 @@ import os
 
 os.makedirs('charts', exist_ok=True)
 
-# ── Load & Clean ─────────────────────────────────────────────────
+#Load & Clean 
 df = pd.read_csv('WA_Fn-UseC_-Telco-Customer-Churn.csv')
 df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')
 df = df.dropna(subset=['TotalCharges'])
 df['ChurnBinary'] = df['Churn'].apply(lambda x: 1 if x == 'Yes' else 0)
 
-# ── Colors ───────────────────────────────────────────────────────
+#Colors 
 BG     = '#0d0d0d'
 PANEL  = '#1a1a1a'
 RED    = '#ff4d4d'
@@ -32,9 +32,8 @@ def style_ax(ax):
     for spine in ax.spines.values():
         spine.set_edgecolor('#333333')
 
-# ════════════════════════════════════════════════════════════════
+
 # PAGE 1
-# ════════════════════════════════════════════════════════════════
 fig = plt.figure(figsize=(20, 12), facecolor=BG)
 fig.text(0.5, 0.97,
          'TELCO CUSTOMER CHURN  |  Retention & Churn Analysis Dashboard  |  Page 1 of 2',
@@ -170,9 +169,7 @@ plt.savefig('charts/churn_dashboard_page1.png', dpi=150,
 plt.close()
 print("Page 1 saved!")
 
-# ════════════════════════════════════════════════════════════════
 # PAGE 2
-# ════════════════════════════════════════════════════════════════
 fig = plt.figure(figsize=(20, 12), facecolor=BG)
 fig.text(0.5, 0.97,
          'TELCO CUSTOMER CHURN  |  Cohort Analysis & Recommendations  |  Page 2 of 2',
