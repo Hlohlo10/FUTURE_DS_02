@@ -5,7 +5,6 @@ import os
 # Create charts folder
 os.makedirs('charts', exist_ok=True)
  
-# Load clean data
 df = pd.read_csv('telco_churn_clean.csv')
 print("Data loaded!")
 print(f"Total Customers: {len(df):,}")
