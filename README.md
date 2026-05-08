@@ -14,6 +14,7 @@
 ### Tools Used
 - Python (Pandas, Matplotlib)
 - VS Code
+  
 ### Charts
 ![Dashboard Page 1](churn_dashboard_page1.png)
 ![Dashboard Page 2](churn_dashboard_page2.png)
@@ -22,3 +23,5 @@
 ![Charts](churn_by_payment.png)
 ![Charts](churn_by_tenure.png)
 
+### Dataset 
+ Telco Customer Churn Dataset (Kaggle)
